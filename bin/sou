@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const prgram = process.argv.slice(2);
+switch(prgram[0]) {
+    case 'new': 
+    const download = require('../src/download');
+    download('lianhaiming/bee-api', 'test', function(d) {
+    });
+    break;
+}
